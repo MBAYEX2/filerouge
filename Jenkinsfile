@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DOCKER_HUB_CREDENTIALS = 'jnk-creds' // ID Jenkins Credentials
-        DOCKERHUB_USER = 'pauljosephd'       // ton nom d’utilisateur Docker Hub
+        DOCKERHUB_USER = 'arafat2'       // ton nom d’utilisateur Docker Hub
     }
 
     stages {
@@ -82,12 +82,12 @@ pipeline {
 
     post {
         success {
-            mail to: 'doguepauljoseph@gmail.com',
+            mail to: 'mbayex2@gmail.com',
                  subject:"deploiement reussi",
                   body: "l'application a ete deploye avec succes"
         }
         failure {
-            mail to: 'doguepauljoseph@gmail.com',
+            mail to: 'mbayex2@gmail.com',
                  subject:"echec du deploiement",
                   body: "veuillez corriger vos erreurs"
         }
