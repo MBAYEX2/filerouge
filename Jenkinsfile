@@ -80,16 +80,4 @@ pipeline {
         }
     }
 
-    post {
-        success {
-            mail to: 'mbayex2@gmail.com',
-                 subject:"deploiement reussi",
-                  body: "l'application a ete deploye avec succes"
-        }
-        failure {
-            mail to: 'mbayex2@gmail.com',
-                 subject:"echec du deploiement",
-                  body: "veuillez corriger vos erreurs"
-        }
-    }
 }
